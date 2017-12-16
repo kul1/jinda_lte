@@ -1,0 +1,400 @@
+%aside.main-sidebar
+  %section.sidebar
+    .user-panel
+      .pull-left.image
+        %img.img-circle{:alt => "User Image", :src => asset_url("user2-160x160.jpg")}/
+      .pull-left.info
+        %p Alexander Pierce
+        %a{:href => "#"}
+          %i.fa.fa-circle.text-success
+          Online
+    / search form
+    %form.sidebar-form{:action => "#", :method => "get"}
+      .input-group
+        %input.form-control{:name => "q", :placeholder => "Search...", :type => "text"}/
+        %span.input-group-btn
+          %button#search-btn.btn.btn-flat{:name => "search", :type => "submit"}
+            %i.fa.fa-search
+    / /.search form
+    / sidebar menu: : style can be found in sidebar.less
+    %ul.sidebar-menu{"data-widget" => "tree"}
+      %li.header MAIN NAVIGATION
+      %li.active.treeview
+        %a{:href => "#"}
+          %i.fa.fa-dashboard
+          %span Dashboard
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li.active
+            %a{:href => "index.html"}
+              %i.fa.fa-circle-o
+              Dashboard v1
+          %li
+            %a{:href => "index2.html"}
+              %i.fa.fa-circle-o
+              Dashboard v2
+
+      = render 'layouts/navigation/menu'
+
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-files-o
+          %span Layout Options
+          %span.pull-right-container
+            %span.label.label-primary.pull-right 4
+        %ul.treeview-menu
+          %li
+            %a{:href => "top-nav.html"}
+              %i.fa.fa-circle-o
+              Top Navigation
+          %li
+            %a{:href => "boxed.html"}
+              %i.fa.fa-circle-o
+              Boxed
+          %li
+            %a{:href => "fixed.html"}
+              %i.fa.fa-circle-o
+              Fixed
+          %li
+            %a{:href => "collapsed-sidebar.html"}
+              %i.fa.fa-circle-o
+              Collapsed Sidebar
+      %li
+        %a{:href => "widgets.html"}
+          %i.fa.fa-th
+          %span Widgets
+          %span.pull-right-container
+            %small.label.pull-right.bg-green new
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-pie-chart
+          %span Charts
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "charts/chartjs.html"}
+              %i.fa.fa-circle-o
+              ChartJS
+          %li
+            %a{:href => "charts/morris.html"}
+              %i.fa.fa-circle-o
+              Morris
+          %li
+            %a{:href => "charts/flot.html"}
+              %i.fa.fa-circle-o
+              Flot
+          %li
+            %a{:href => "charts/inline.html"}
+              %i.fa.fa-circle-o
+              Inline charts
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-laptop
+          %span UI Elements
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "UI/general.html"}
+              %i.fa.fa-circle-o
+              General
+          %li
+            %a{:href => "UI/icons.html"}
+              %i.fa.fa-circle-o
+              Icons
+          %li
+            %a{:href => "UI/buttons.html"}
+              %i.fa.fa-circle-o
+              Buttons
+          %li
+            %a{:href => "UI/sliders.html"}
+              %i.fa.fa-circle-o
+              Sliders
+          %li
+            %a{:href => "UI/timeline.html"}
+              %i.fa.fa-circle-o
+              Timeline
+          %li
+            %a{:href => "UI/modals.html"}
+              %i.fa.fa-circle-o
+              Modals
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-edit
+          %span Forms
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "forms/general.html"}
+              %i.fa.fa-circle-o
+              General Elements
+          %li
+            %a{:href => "forms/advanced.html"}
+              %i.fa.fa-circle-o
+              Advanced Elements
+          %li
+            %a{:href => "forms/editors.html"}
+              %i.fa.fa-circle-o
+              Editors
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-table
+          %span Tables
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "tables/simple.html"}
+              %i.fa.fa-circle-o
+              Simple tables
+          %li
+            %a{:href => "tables/data.html"}
+              %i.fa.fa-circle-o
+              Data tables
+      %li
+        %a{:href => "calendar.html"}
+          %i.fa.fa-calendar
+          %span Calendar
+          %span.pull-right-container
+            %small.label.pull-right.bg-red 3
+            %small.label.pull-right.bg-blue 17
+      %li
+        %a{:href => "mailbox/mailbox.html"}
+          %i.fa.fa-envelope
+          %span Mailbox
+          %span.pull-right-container
+            %small.label.pull-right.bg-yellow 12
+            %small.label.pull-right.bg-green 16
+            %small.label.pull-right.bg-red 5
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-folder
+          %span Examples
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "examples/invoice.html"}
+              %i.fa.fa-circle-o
+              Invoice
+          %li
+            %a{:href => "examples/profile.html"}
+              %i.fa.fa-circle-o
+              Profile
+          %li
+            %a{:href => "examples/login.html"}
+              %i.fa.fa-circle-o
+              Login
+          %li
+            %a{:href => "examples/register.html"}
+              %i.fa.fa-circle-o
+              Register
+          %li
+            %a{:href => "examples/lockscreen.html"}
+              %i.fa.fa-circle-o
+              Lockscreen
+          %li
+            %a{:href => "examples/404.html"}
+              %i.fa.fa-circle-o
+              404 Error
+          %li
+            %a{:href => "examples/500.html"}
+              %i.fa.fa-circle-o
+              500 Error
+          %li
+            %a{:href => "examples/blank.html"}
+              %i.fa.fa-circle-o
+              Blank Page
+          %li
+            %a{:href => "examples/pace.html"}
+              %i.fa.fa-circle-o
+              Pace Page
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-share
+          %span Multilevel
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "#"}
+              %i.fa.fa-circle-o
+              Level One
+          %li.treeview
+            %a{:href => "#"}
+              %i.fa.fa-circle-o
+              Level One
+              %span.pull-right-container
+                %i.fa.fa-angle-left.pull-right
+            %ul.treeview-menu
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-circle-o
+                  Level Two
+              %li.treeview
+                %a{:href => "#"}
+                  %i.fa.fa-circle-o
+                  Level Two
+                  %span.pull-right-container
+                    %i.fa.fa-angle-left.pull-right
+                %ul.treeview-menu
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-circle-o
+                      Level Three
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-circle-o
+                      Level Three
+          %li
+            %a{:href => "#"}
+              %i.fa.fa-circle-o
+              Level One
+      %li
+        %a{:href => "https://adminlte.io/docs"}
+          %i.fa.fa-book
+          %span Documentation
+      %li.header LABELS
+      %li
+        %a{:href => "#"}
+          %i.fa.fa-circle-o.text-red
+          %span Important
+      %li
+        %a{:href => "#"}
+          %i.fa.fa-circle-o.text-yellow
+          %span Warning
+      %li
+        %a{:href => "#"}
+          %i.fa.fa-circle-o.text-aqua
+          %span Information
+  / /.sidebar
+/ Control Sidebar
+%aside.control-sidebar.control-sidebar-dark
+  / Create the tabs
+  %ul.nav.nav-tabs.nav-justified.control-sidebar-tabs
+    %li
+      %a{"data-toggle" => "tab", :href => "#control-sidebar-home-tab"}
+        %i.fa.fa-home
+    %li
+      %a{"data-toggle" => "tab", :href => "#control-sidebar-settings-tab"}
+        %i.fa.fa-gears
+  / Tab panes
+  .tab-content
+    / Home tab content
+    #control-sidebar-home-tab.tab-pane
+      %h3.control-sidebar-heading Recent Activity
+      %ul.control-sidebar-menu
+        %li
+          %a{:href => "javascript:void(0)"}
+            %i.menu-icon.fa.fa-birthday-cake.bg-red
+            .menu-info
+              %h4.control-sidebar-subheading Langdon's Birthday
+              %p Will be 23 on April 24th
+        %li
+          %a{:href => "javascript:void(0)"}
+            %i.menu-icon.fa.fa-user.bg-yellow
+            .menu-info
+              %h4.control-sidebar-subheading Frodo Updated His Profile
+              %p New phone +1(800)555-1234
+        %li
+          %a{:href => "javascript:void(0)"}
+            %i.menu-icon.fa.fa-envelope-o.bg-light-blue
+            .menu-info
+              %h4.control-sidebar-subheading Nora Joined Mailing List
+              %p nora@example.com
+        %li
+          %a{:href => "javascript:void(0)"}
+            %i.menu-icon.fa.fa-file-code-o.bg-green
+            .menu-info
+              %h4.control-sidebar-subheading Cron Job 254 Executed
+              %p Execution time 5 seconds
+      / /.control-sidebar-menu
+      %h3.control-sidebar-heading Tasks Progress
+      %ul.control-sidebar-menu
+        %li
+          %a{:href => "javascript:void(0)"}
+            %h4.control-sidebar-subheading
+              Custom Template Design
+              %span.label.label-danger.pull-right 70%
+            .progress.progress-xxs
+              .progress-bar.progress-bar-danger{:style => "width: 70%"}
+        %li
+          %a{:href => "javascript:void(0)"}
+            %h4.control-sidebar-subheading
+              Update Resume
+              %span.label.label-success.pull-right 95%
+            .progress.progress-xxs
+              .progress-bar.progress-bar-success{:style => "width: 95%"}
+        %li
+          %a{:href => "javascript:void(0)"}
+            %h4.control-sidebar-subheading
+              Laravel Integration
+              %span.label.label-warning.pull-right 50%
+            .progress.progress-xxs
+              .progress-bar.progress-bar-warning{:style => "width: 50%"}
+        %li
+          %a{:href => "javascript:void(0)"}
+            %h4.control-sidebar-subheading
+              Back End Framework
+              %span.label.label-primary.pull-right 68%
+            .progress.progress-xxs
+              .progress-bar.progress-bar-primary{:style => "width: 68%"}
+      / /.control-sidebar-menu
+    / /.tab-pane
+    / Stats tab content
+    #control-sidebar-stats-tab.tab-pane Stats Tab Content
+    / /.tab-pane
+    / Settings tab content
+    #control-sidebar-settings-tab.tab-pane
+      %form{:method => "post"}
+        %h3.control-sidebar-heading General Settings
+        .form-group
+          %label.control-sidebar-subheading
+            Report panel usage
+            %input.pull-right{:checked => "checked", :type => "checkbox"}/
+          %p
+            Some information about this general settings option
+        / /.form-group
+        .form-group
+          %label.control-sidebar-subheading
+            Allow mail redirect
+            %input.pull-right{:checked => "checked", :type => "checkbox"}/
+          %p
+            Other sets of options are available
+        / /.form-group
+        .form-group
+          %label.control-sidebar-subheading
+            Expose author name in posts
+            %input.pull-right{:checked => "checked", :type => "checkbox"}/
+          %p
+            Allow the user to show his name in blog posts
+        / /.form-group
+        %h3.control-sidebar-heading Chat Settings
+        .form-group
+          %label.control-sidebar-subheading
+            Show me as online
+            %input.pull-right{:checked => "checked", :type => "checkbox"}/
+        / /.form-group
+        .form-group
+          %label.control-sidebar-subheading
+            Turn off notifications
+            %input.pull-right{:type => "checkbox"}/
+        / /.form-group
+        .form-group
+          %label.control-sidebar-subheading
+            Delete chat history
+            %a.text-red.pull-right{:href => "javascript:void(0)"}
+              %i.fa.fa-trash-o
+        / /.form-group
+    / /.tab-pane
+/ /.control-sidebar
+/
+  Add the sidebar's background. This div must be placed
+  immediately after the control sidebar
+.control-sidebar-bg
+/ ./wrapper
+
+
