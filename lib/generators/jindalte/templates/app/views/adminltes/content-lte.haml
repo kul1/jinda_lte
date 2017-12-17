@@ -1,6 +1,6 @@
 %section.content-header
   %h1
-    Dashboard-Test
+    Dashboard
     %small Control panel
   %ol.breadcrumb
     %li
@@ -97,7 +97,7 @@
         #chat-box.box-body.chat
           / chat item
           .item
-            %img.online{:alt => "user image", :src => "dist/img/user4-128x128.jpg"}/
+            %img.online{:alt => "user image", :src => asset_url("dist/img/user4-128x128.jpg")}/
             %p.message
               %a.name{:href => "#"}
                 %small.text-muted.pull-right
@@ -117,7 +117,7 @@
           / /.item
           / chat item
           .item
-            %img.offline{:alt => "user image", :src => "dist/img/user3-128x128.jpg"}/
+            %img.offline{:alt => "user image", :src => asset_url("dist/img/user3-128x128.jpg")}/
             %p.message
               %a.name{:href => "#"}
                 %small.text-muted.pull-right
@@ -130,7 +130,7 @@
           / /.item
           / chat item
           .item
-            %img.offline{:alt => "user image", :src => "dist/img/user2-160x160.jpg"}/
+            %img.offline{:alt => "user image", :src => asset_url("dist/img/user2-160x160.jpg")}/
             %p.message
               %a.name{:href => "#"}
                 %small.text-muted.pull-right

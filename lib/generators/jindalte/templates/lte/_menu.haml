@@ -31,8 +31,14 @@
       Sign Up 
 %li
   = link_to "Refresh", "#", :onclick=>"window.location.replace('/')"
-- if !login?  
-  = link_to image_tag( 'facebook-button.png'), '/auth/facebook', rel: "external"
+- if !login? 
+  %a{:href => '/auth/facebook', "data-panel" => "main", rel: "external"}
+    %i.fa.fa-facebook style=("width:16px; height:20px")
+    
+
+
+
+
 
  
 
