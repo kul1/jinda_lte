@@ -10,6 +10,7 @@ module Jindalte
       inside("app/assets/javascripts") { run "mv application.js application.js.bak" }
       inside("app/assets/stylesheets") { run "mv application.scss application.scss.bak" }
       inside("app/jinda") { run "mv index.mm index.mm.bak"}
+      directory "app/assets/lte/dist/img"
     end
 
     def copy_theme
